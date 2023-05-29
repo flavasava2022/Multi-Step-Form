@@ -7,8 +7,6 @@ body {
   font-family: Ubuntu;
   font-size: 14px;
   text-transform: capitalize;
-  /* transition-timing-function: linear;
-  transition-duration: 2s; */
   background-color: hsl(206deg 94% 87% / 66%);
 }
 button {
@@ -21,7 +19,6 @@ button {
   display: grid;
   grid-template-columns: 25% 67%;
   gap: 5%;
-  /* overflow: hidden; */
   border: 1px solid hsl(231, 11%, 63%);
   border-radius: 12px;
   background-color: #ffffffc7;
@@ -29,7 +26,7 @@ button {
 }
 .main-card .sidebar {
   height: 400px;
-  background-image: url(images/bg-sidebar-desktop.svg);
+  background-image: url(/images/bg-sidebar-desktop.svg);
   background-position: 0%;
   background-size: cover;
   background-clip: border-box;
