@@ -1,0 +1,155 @@
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  .main-card {
+    width: 350px;
+    margin: 150px auto;
+    position: relative;
+    display: block;
+  }
+  .main-card .sidebar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: -114px;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    background-image: url(/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .main-card .form {
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    width: 400px;
+    height: 340px;
+  }
+
+  .main-card .form .overflow {
+    width: 1750px;
+    position: absolute;
+    padding: 10px 0px;
+    top: 0;
+    left: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 340px);
+    gap: 100px;
+    height: 100%;
+  }
+  .main-card .form .overflow .main {
+    width: 345px;
+    display: grid;
+    grid-template-rows: 13% 75% 15%;
+    padding: 0 10px;
+  }
+
+  .main-card .form .heading p {
+    color: hsl(231, 11%, 63%);
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .main-card .form .main-1 label {
+    padding: 5px;
+  }
+  .main-card .form .main-1 .wrong-msg span {
+    margin-right: 24px;
+    margin-top: 5px;
+  }
+
+  /* ************************ */
+  /* page-2 */
+  /* ***************** */
+  .main-card .form .overflow .main-2 .boxes {
+    display: flex;
+    max-width: 340px;
+  }
+  .main-card .form .overflow .main-2 .boxes .box {
+    max-width: 90px;
+    height: 120px;
+    padding: 10px;
+    grid-template-rows: 41% 25% 13%;
+  }
+  .main-card .form .overflow .main-2 .boxes .box .img {
+    width: 20px;
+    height: 20px;
+    color: #ffffffc7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-card .form .overflow .main-2 .boxes .box span {
+    width: fit-content;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .main-card .form .overflow .main-2 .boxes .box p {
+    font-size: 10px;
+    color: hsl(231, 11%, 63%);
+  }
+  .main-card .form .overflow .main-2 .sub {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .main-card .form .overflow .main-2 .next {
+    margin-right: 22px;
+  }
+  /* ************************ */
+  /* page-3 */
+  /* ***************** */
+  .main-card .form .overflow .main-3 {
+    width: 345px;
+    display: grid;
+    grid-template-rows: 18% 70% 15%;
+    padding: 0 10px;
+  }
+  .main-3 .data-3 {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    gap: 9%;
+  }
+  .main-3 .data-3 .choice {
+    padding: 10px;
+  }
+  .choice .text-data p {
+    color: hsl(231, 11%, 63%);
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  /* ************************ */
+  /* page-4 */
+  /* ***************** */
+  .main-card .form .main-4 .main-plan p {
+    font-size: 10px;
+  }
+  .choice .text-data span {
+    width: fit-content;
+    display: inline;
+    margin-right: 0px;
+  }
+  .main-card .form .main-4 .text-data {
+    padding: 5px 0;
+  }
+  .main-card .form .main-4 .adds p {
+    font-size: 12px;
+  }
+  /* ************************ */
+  /* page-4 */
+  /* ***************** */
+  .main-card .form .main-5 {
+    display: block;
+    margin-top: 50%;
+    padding: 10px;
+    width: auto;
+  }
+  .main-card .form .main-5 .end {
+    margin-top: -50px;
+    margin-left: -19px;
+  }
+}
