@@ -26,7 +26,7 @@ button {
 }
 .main-card .sidebar {
   height: 400px;
-  background-image: url(/images/bg-sidebar-desktop.svg);
+  background-image: url(images/bg-sidebar-desktop.svg);
   background-position: 0%;
   background-size: cover;
   background-clip: border-box;
