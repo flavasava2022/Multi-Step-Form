@@ -16,7 +16,7 @@
     left: 0;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    background-image: url(/images/bg-sidebar-mobile.svg);
+    background-image: url(images/bg-sidebar-mobile.svg);
     background-size: cover;
     padding: 10px;
     border-radius: 12px;
