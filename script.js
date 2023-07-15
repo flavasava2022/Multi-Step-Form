@@ -48,19 +48,33 @@ btn.addEventListener("click", () => {
   msg1.style.opacity = 0;
   msg2.style.opacity = 0;
   msg3.style.opacity = 0;
-  if (nameInput.value != "" && mailInput.value != "" && numInput.value != "") {
+  if (
+    nameInput.value != "" &&
+    mailInput.value.includes("@") &&
+    mailInput.value.length > 5 &&
+    numInput.value.includes(0)
+  ) {
     overFlow.style = "left: -440px;";
     stepNum.forEach((step) => step.classList.remove("clicked-side"));
     stepNum[1].classList.add("clicked-side");
-  } else if (nameInput.value == "") {
+  } else if (nameInput.value.length < 2) {
     nameInput.focus();
     msg1.style.opacity = 1;
-  } else if (mailInput.value == "") {
+    msg1.innerHTML = "Please Type Your First Name";
+  } else if (mailInput.value.length <= 8) {
     msg2.style.opacity = 1;
+    msg2.innerHTML = "Check Your Email Address";
     mailInput.focus();
-  } else {
+    if (!mailInput.value.includes("@")) {
+      msg2.innerHTML = "Your Mail Must includes @";
+      msg2.style.opacity = 1;
+      mailInput.focus();
+    }
+  }
+  if (!numInput.value.includes(0)) {
     msg3.style.opacity = 1;
     numInput.focus();
+    msg3.innerHTML = "Please Type Your Phone Number";
   }
 });
 
